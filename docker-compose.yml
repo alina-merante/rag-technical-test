@@ -1,0 +1,26 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+  langflow:
+    image: langflowai/langflow:latest
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    environment:
+      - LANGFLOW_HOST=0.0.0.0
+      - LANGFLOW_PORT=7860
+    volumes:
+      - langflow_data:/root/.langflow
+    depends_on:
+      - qdrant
+
+volumes:
+  qdrant_storage:
+  langflow_data:

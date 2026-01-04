@@ -1,0 +1,3 @@
+Qdrant è un vector database utilizzato per memorizzare embeddings e fare similarity search.
+Una pipeline RAG funziona così: query → retrieval dal vector store → contesto → LLM.
+La metrica Faithfulness misura quanto una risposta è supportata dalle fonti recuperate.
