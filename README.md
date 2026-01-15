@@ -35,6 +35,10 @@ Embeddings & Limitations
 OpenAI embeddings were used to align with the required tooling.
 Due to API quota limits, runtime ingestion was not executed, but the pipeline is complete and reproducible with a valid API key.
 
+
+<img width="1686" height="799" alt="RAG prototype" src="https://github.com/user-attachments/assets/d15dabec-bd89-45c4-baac-6657636976a6" />
+
+
 Notes
 
 Langflow is used as a visual prototyping tool.
